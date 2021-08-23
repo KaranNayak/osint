@@ -743,11 +743,11 @@ if __name__ == '__main__':
 
 
     def alert_email(subject):
-        smtp_server = 'mailer.ocd.com'
+        smtp_server = 'your.smtp_server.com'
         port = 25
 
         msg = MIMEMultipart()
-        msg['From'] = 'knayak@ocd-tech.com'
+        msg['From'] = 'sender_email@example.com'
         msg['Subject'] = subject
     
         body = MIMEText("**********************\
@@ -761,7 +761,7 @@ if __name__ == '__main__':
         msg.attach(record)
 
         server = smtplib.SMTP(smtp_server,port)
-        server.sendmail(msg['From'], ['knayak@ocd-tech.com'], msg.as_string())
+        server.sendmail(msg['From'], ['sender_email@example.com'], msg.as_string())
         server.quit()
 
     password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
