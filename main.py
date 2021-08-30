@@ -22,7 +22,7 @@ from email.mime.text import MIMEText
 #Function to transfer Email data
 def sqldb_email(domain_name):
     domain_name = domain_name
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
 
     db = MySQLdb.connect(host='10.10.10.19',
         port=3306,
@@ -70,7 +70,7 @@ def sqldb_email(domain_name):
 
 def sqldb_names(domain_name):
     domain_name = domain_name
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
 
     db = MySQLdb.connect(host='10.10.10.19',
     port=3306,
@@ -139,7 +139,7 @@ def sqldb_names(domain_name):
 
 def sqldb_dns_records(domain_name):
     domain_name = domain_name
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
 
     db = MySQLdb.connect(host='10.10.10.19',
         port=3306,
@@ -208,7 +208,7 @@ def sqldb_dns_records(domain_name):
 
 def sqldb_dns_records_misc(domain_name):
     domain_name = domain_name
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
 
     db = MySQLdb.connect(host='10.10.10.19',
         port=3306,
@@ -271,7 +271,7 @@ def sqldb_dns_records_misc(domain_name):
 
 def sqldb_hosts(domain_name):
     domain_name = domain_name
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
 
     db = MySQLdb.connect(host='10.10.10.19',
         port=3306,
@@ -318,7 +318,7 @@ def sqldb_hosts(domain_name):
 
 def sqldb_reg_domain(domain_name):
     domain_name = domain_name
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
     db = MySQLdb.connect(host='10.10.10.19',
         port=3306,
         user='root',
@@ -431,7 +431,7 @@ def sqldb_reg_domain(domain_name):
 
 def sqldb_squat(domain_name):
     domain_name = domain_name
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
 
     db = MySQLdb.connect(host='10.10.10.19',
         port=3306,
@@ -504,7 +504,7 @@ def sqldb_squat(domain_name):
 
 def sqldb_subdomains(domain_name):
     domain_name = domain_name
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
 
     db = MySQLdb.connect(host='10.10.10.19',
         port=3306,
@@ -567,7 +567,7 @@ def sqldb_subdomains(domain_name):
 
 def sqldb_whois_data(domain_name):
     domain_name = domain_name
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
 
     db = MySQLdb.connect(host='10.10.10.19',
         port=3306,
@@ -629,7 +629,7 @@ def sqldb_whois_data(domain_name):
 
 def sqldb_whois_ip(domain_name):
     domain_name = domain_name
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
 
     db = MySQLdb.connect(host='10.10.10.19',
         port=3306,
@@ -764,7 +764,7 @@ if __name__ == '__main__':
         server.sendmail(msg['From'], ['sender_email@example.com'], msg.as_string())
         server.quit()
 
-    password = (base64.b64decode("MjViaG9wMTIz").decode("utf-8"))
+    password = (base64.b64decode("<base64 encoded password>").decode("utf-8"))
     
     mySQLconnection = mysql.connector.connect(host='10.10.10.19',
                                 port = 3306,
